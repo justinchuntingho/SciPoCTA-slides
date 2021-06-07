@@ -35,8 +35,151 @@
                 <img class="plain" src="https://www.sciencespo.fr/ecole-doctorale/sites/bo-k2s.sciences-po.fr.ecole-doctorale/themes/sciencespo/ecole-doctorale_en.png" width = "30%">
   			  </section>
               <section>
+                <h2>Learning Objectives:</h2>
+                <ol><li>Basic R (Day 1 & 2)</li>
+               <li>Collecting social media data (Day 3)</li>
+               <li>Analysing text using R (Day 4 & 5)</li><ol>
+             </section>
+                  <section>
+                    <h2>(Realistic) Learning Objectives:</h2>
+                    <div style = "text-align: left;">
+                        By the end of the course, you will be able to:
+                        <ol><li>Know what software and packages are available for various research tasks</li>
+                            <li>Copy and paste a chunk of codes and make it work</li>
+                            <li>Read documentation and R scripts so that you can further your learning independently</li><ol></div>
+                 </section>
+              <!-- Intro R -->
+              <section>
+                  <section>
+                      <h2>Introduction to R</h2>
+                  </section>
+              <section>
+                  <h2>R & R Studio</h2>
+              </section>
+                  <section>
+                      <img src="https://datacarpentry.org/r-socialsci/fig/r+rstudio-analogy.jpg">
+                  </section>
+                  <section>
+                      <img src="https://datacarpentry.org/r-socialsci/fig/R_00_Rstudio_01.png">
+                  </section>
+                  <section>
+                      <h3>Create a new project</h3>
+                    <ol><li>Under the File menu, click on New project, choose New directory, then New project</li>
+                        <li>Enter a name for this new folder, and choose a convenient location</li>
+                        <li>Click on Create project</li>
+                        <li>Create a new file where we will type our scripts</li></ol>
+                  </section>
+                  <section>
+                      <img src="https://datacarpentry.org/r-socialsci/fig/working-directory-structure.png">
+                  </section>
+                  <section>
+                      <h3>Interaction with R</h3>
+                    <ul><li>Type commands directly into the console and press 'Enter'</li>
+                        <li>Execute commands directly from the script editor using 'Ctrl' + 'Enter' ('Cmd' + 'Return' for Macs)</li>
+                    </ul>
+                  </section>
+                  <section>
+                      <h3>Installing additional packages using the packages tab</h3>
+                  </section>
+                  <section>
+                      <h3>Exercise</h3>
+                      <ul><li>Use the install option from the packages tab to install the <span class="highlight-red">‘tidyverse’</span> package.</li></ul>
+                  </section>
+                  <section>
+                      <h2>Tidyverse</h2>
+                  </section>
+                  <section>
+                      <img src="tidyverse.png">
+                  </section>
+                  <section>
+                      <h1>%>%</h1>
+                  </section>
+                  <section>
+                      <img src="https://media.giphy.com/media/2LV8F7cqGunUA/giphy.gif">
+                  </section>
+                  <section>
+                      <h2>Grammar of Graphics</h2>
+                  </section>
+                  <section>
+                      <img src="https://cdn-images-1.medium.com/max/1600/1*MMZuYgeC_YjXNC1r4D4sog.png">
+                  </section>
+              </section>
+
+            <!-- Social Media Data -->
+            <section>
+                <section>
+                    <h2>Collecting Social Media Data</h2>
+                </section>
+                <section>
+                    <h2>What is an API?</h2>
+                </section>
+                <section data-background="https://www.seobility.net/en/wiki/images/f/f1/Rest-API.png" data-background-size="50%">
+                </section>
+                <section data-background="https://www.seobility.net/en/wiki/images/f/f1/Rest-API.png" data-background-size="50%">
+                  <h4 style = "background-color:rgba(255,255,255,0.7);">
+                      <p>Documentations:</p>
+                      <ul>
+                          <li><a href="https://developers.facebook.com/docs/graph-api/reference/v6.0/page/feed">Facebook</a></li>
+                          <li><a href="https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-all">Twitter</a></li>
+                      </ul>
+                  </h4>
+                </section>
+                <section>
+                  <h2>Warning!</h2>
+                  <p>
+                      <ul>
+                          <li>API is NOT designed for research's purposes!</li>
+                          <li>What you can get depends on the platform's mercy!</li>
+                          <li>It is prone to error and bias!</li>
+                      </ul>
+                  </p>
+                </section>
+                <section>
+                  <h2>Available Endpoints and Limitations</h2>
+                </section>
+                <section>
+                  <h3>Facebook:</h3>
+                  <p>
+                      <ul>
+                          <li><b>Graph API</b>: Public pages data only (no personal profile); Maximum of 600 posts per page per year; Known bias exists (See: <a href="https://journals.sagepub.com/doi/full/10.1177/2053951720905874">Ho, 2020</a>)</li>
+                          <li><b>CrowdTangle</b>: Public Facebook pages and Instagram accounts; Limitations on type of data; Available to university researchers on selected topics only</li>
+                      </ul>
+                  </p>
+
+                </section>
+                <section>
+                  <h3>Twitter:</h3>
+                  <p>
+                      <ul>
+                          <li><b>Search API</b>: Limited to tweets published in the past 7 days</li>
+                          <li><b>Streaming API</b>: ~2% of Twittersphere; Known bias exists (See: <a href="http://wwwconference.org/proceedings/www2014/companion/p555.pdf">Morstatter et al., 2014</a>)</li>
+                          <li><b>Academic Research Product Track</b>: Available to academic researchers only; Full-archive access; Sounds too good to be true</li>
+                      </ul>
+                  </p>
+
+                </section>
+                <section>
+                  <h3>Conclusion:</h3>
+                  <p>
+                      <ul>
+                          <li>Know what you can (can't) get</li>
+                          <li>Collect data while you still can <br>(it might not be the case tomorrow)</li>
+                          <li>Observe Terms of Service <br>(and other platform's restrictions)</li>
+                      </ul>
+                  </p>
+                </section>
+                <section data-background="monkeyr.gif">
+                  <h2 style = "background-color:rgba(255,255,255,0.7);">Time for Data Collection</h2>
+                </section>
+            </section>
+            <!-- End of section -->
+
+
+
+
+              <section>
                     <section>
-                        <h2>Text Analysis: <br>The Basics</h2>
+                        <h2>Text Analysis: The Basics</h2>
                     </section>
 										<section>
                         <h4><i>“Systematic, objective, quantitative analysis of message characteristics"</i></h3>
